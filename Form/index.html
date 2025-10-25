@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../Form/css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <div class="form-header">
+            <i class="fa-regular fa-circle-xmark"></i>
+            <h4>Add New Task</h4>
+            <p>Create a new task with details like priority, tags, and due date</p>
+        </div>
+        <div class="form-body">
+            <div class="form-input">
+                <label for="Title">Title </label>
+                <input type="text" id="Title" name="Title" placeholder="What do you want to do?" required>
+                <p>Press Enter to add, Shift+Enter to add and stay open</p>
+                <label for="Discription">Description</label>
+                <textarea name="" id="" placeholder="Add more details..." ></textarea>
+                <label for = "Due Date">Due Date</label>
+                <input type="date" id="Due Date" name="Due Date">
+                <p>Pick a date or choose Today / Tomorrow</p>
+                <div class="form-select">
+                    <label for="Priority">Priority</label>
+                    <div class="form-select-options">
+                        <div id="select-option">Low</div>
+                        <div id="select-option" class="active">Medium</div>
+                        <div id="select-option">High</div>
+                    </div>
+                </div>
+                <div class="form-tags">
+                    <label for="Tags">Tags</label>
+                    <input type="text" id="Tags" name="Tags" placeholder="Add tags...">
+                    <p>Press Enter to add tag. Max 6 tags.</p>
+                </div>
+                <div class="form-status">
+                    <label for="Status">Status</label>
+                    <select name="Status" class="status">
+                        <option class="activ">To Do</option>
+                        <option>In Progress</option>
+                        <option>Completed</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="form-footer">
+            <button type="submit" class="add-btn">Add Task</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+        </div>
+    </form>
+<script src="../Form/js/script.js"></script>
+</body>
+</html>
